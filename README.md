@@ -2,10 +2,11 @@
 
 Dynamically add skip links depending on the page content. Shows skip links on focus for screen readers/keyboard users.
 
-## USAGE:
+## USAGE
 *  Call the function on the element or multiple elements that you want to link to.
 *  Pass the link id and the link name.
 *  Run the function after the window load event so all elements are already on the page.
+*  Add the class `.site-header` to the header and `.site-footer` to the footer.
 
 
 ## Example
