@@ -1,0 +1,43 @@
+/****************************************************************************
+ *
+ *  Skip Links Plugin for Web Accessibility
+ *  ----------------------------------------
+ *  Author: @nroyall @whitewhale
+ *  Docs: https://github.com/whitewhale/LWSkipLinks
+ *  Licensed under the MIT license
+ *
+ *  Shows links on focus for screen readers/keyboard users
+ *
+ ****************************************************************************
+ */
+
+.skip-to-link {
+  pointer-events: none;
+  z-index: 11; /* above site-header and footer */
+  position: absolute;
+  top: 0;
+  margin: 0 0 0 60px;
+  padding: 14px 15px 15px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+  background: #fff;
+  color: #fff;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.8);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+.skip-to-link:focus {
+  pointer-events: all;
+  opacity: 1;
+  color: #555;
+}
+
+.skip-to-destination.sr-only { // give skip to destinations some headspace
+  top: -40px;
+}
