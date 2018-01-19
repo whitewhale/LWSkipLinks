@@ -12,7 +12,7 @@ Dynamically add skip links depending on the page content. Shows skip links on fo
 
 ```
     // Wait until all elements are on the page before adding skip links (wait for calendar to load etc.)
-    $win.on('load', function() {
+    $(window).on('load', function() {
 
       // Add skip link pointing to sidebar navigation
       $('.side-nav').addSkipLink('#skip-to-side-nav', 'Sidebar Navigation');
