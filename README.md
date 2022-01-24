@@ -1,4 +1,10 @@
-# LWSkipLinks
+# LWSkipLinks - Archived
+
+This repository is no longer supported. 
+
+Code has been incorporated into LiveWhaleIngredients.
+
+=================================================================================
 
 Dynamically add skip links depending on the page content. Shows skip links on focus for screen readers/keyboard users.
 
